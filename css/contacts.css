@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700;6..12,800;6..12,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.header {
+  background: #5841E8;
+  height: 100vh;
+  min-height: 728px;
+  padding: 0 100px;
+}
+@media screen and (max-width: 1441px) {
+  .header {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 509px) {
+  .header {
+    padding: 0 30px;
+  }
+}
+.header-navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  max-width: 1340px;
+}
+.header-navbar .logo {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  cursor: pointer;
+  align-items: center;
+  text-decoration: none;
+}
+.header-navbar .logo img {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+.header-navbar .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.header-navbar .menu li {
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.header-navbar .menu li a {
+  color: #eee;
+  text-decoration: none;
+}
+.header-navbar .menu li a:hover {
+  color: #fff;
+}
+@media screen and (max-width: 967px) {
+  .header-navbar .menu li {
+    margin: 2.5rem 0;
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 967px) {
+  .header-navbar .menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #3921d2;
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 999;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+}
+.header-navbar .menu.active {
+  left: 0;
+}
+.header-navbar .hamburger {
+  display: none;
+}
+@media screen and (max-width: 967px) {
+  .header-navbar .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
+.header-navbar .hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.header-navbar .hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.header-navbar .hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.header-navbar .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+@media screen and (max-width: 1387px) {
+  .header-content .container {
+    gap: 0;
+  }
+}
+.header-content .content {
+  padding-top: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+.header-content .content__title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 3rem;
+  line-height: 126.9%;
+  letter-spacing: 1.28px;
+}
+@media screen and (max-width: 626px) {
+  .header-content .content__title {
+    width: auto;
+    font-size: 2.5rem;
+  }
+}
+.header-content .content__contact-block.whatsapp {
+  background: #fff;
+  margin-top: 20px;
+}
+.header-content .content__contact-block.whatsapp:hover {
+  background: #fff;
+}
+.header-content .content__contact-block.whatsapp span {
+  color: #5841E8;
+  font-weight: 700;
+}
+.header-content .content__contact-block {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  padding: 5px 5px;
+  background: #FF6969;
+  border-radius: 1000px;
+  text-decoration: none;
+  transition: 0.6s ease;
+}
+.header-content .content__contact-block:hover {
+  background: #2f75ff;
+}
+.header-content .content__contact-block span {
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+}
+.header-content .img img {
+  width: 100%;
+  min-width: 636px;
+}
+@media screen and (max-width: 1265px) {
+  .header-content .img img {
+    max-width: 500px;
+    width: 80%;
+    min-width: 75%;
+    margin-right: 100px;
+  }
+}
+@media screen and (max-width: 967px) {
+  .header-content .img img {
+    display: none;
+  }
+}
