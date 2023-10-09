@@ -6,6 +6,10 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   background: url(../img/header-backround-students.svg) no-repeat left;
   height: 100vh;
@@ -182,6 +186,7 @@
   display: inline-block;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
+  text-decoration: none;
   background: #F7C92C;
   border: none;
   color: #000;
@@ -194,6 +199,20 @@
 .header-content .content__button:hover {
   background: #000;
   color: #fff;
+}
+.header-content .content a:last-child {
+  margin-left: 20px;
+}
+.header-content .content a:last-child button {
+  background: #fff;
+  color: #000;
+}
+@media screen and (max-width: 967px) {
+  .header-content .content a:last-child {
+    display: block;
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 .header-content .img img {
   width: 100%;
@@ -273,13 +292,114 @@ main .section-features .section__item-img {
   margin-bottom: 20px;
 }
 
-.section-for-company {
+.section-for-students {
   background-color: #FAFAFF;
   margin-top: 200px;
 }
-.section-for-company .container {
+.section-for-students .container {
   display: flex;
   gap: 200px;
+  padding: 0 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1441px) {
+  .section-for-students .container {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 967px) {
+  .section-for-students .container {
+    gap: 0;
+    justify-content: normal;
+  }
+}
+@media screen and (max-width: 509px) {
+  .section-for-students .container {
+    padding: 0 30px;
+  }
+}
+.section-for-students .section__image {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.section-for-students .section__img {
+  width: 100%;
+  min-width: 300px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1465px) {
+  .section-for-students .section__img {
+    display: block;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 967px) {
+  .section-for-students .section__img {
+    display: none;
+  }
+}
+.section-for-students .section__title {
+  font-size: 36px;
+  color: #4A4A4A;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.section-for-students .section__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  margin-top: 10px;
+  background-color: #F7C92C;
+}
+@media screen and (max-width: 967px) {
+  .section-for-students .section__title {
+    margin-top: 50px;
+  }
+}
+.section-for-students .section__text {
+  color: #575757;
+  font-size: 20px;
+  width: 75%;
+}
+@media screen and (max-width: 1165px) {
+  .section-for-students .section__text {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 967px) {
+  .section-for-students .section__text {
+    max-width: 700px;
+    width: 100%;
+  }
+}
+.section-for-students .section__button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  background: #4B4AEF;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.section-for-students .section__button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.section-for-company {
+  background-color: #FAFAFF;
+}
+.section-for-company .container {
+  display: flex;
   padding: 0 100px;
   justify-content: space-between;
   align-items: center;
@@ -289,12 +409,6 @@ main .section-features .section__item-img {
     padding: 0 50px;
   }
 }
-@media screen and (max-width: 967px) {
-  .section-for-company .container {
-    gap: 0;
-    justify-content: normal;
-  }
-}
 @media screen and (max-width: 509px) {
   .section-for-company .container {
     padding: 0 30px;
@@ -302,11 +416,9 @@ main .section-features .section__item-img {
 }
 .section-for-company .section__image {
   margin-top: 40px;
-  margin-bottom: 40px;
 }
 .section-for-company .section__img {
-  width: 100%;
-  min-width: 300px;
+  width: 75%;
   margin-top: 20px;
 }
 @media screen and (max-width: 1465px) {
