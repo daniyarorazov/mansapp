@@ -26,3 +26,30 @@ function mobileMenu() {
    
 }
 
+var swiper = new Swiper(".sliderPartner", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    slidesPerView: 3,
+    breakpoints: {
+        100: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        901: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+      },
+  });
+

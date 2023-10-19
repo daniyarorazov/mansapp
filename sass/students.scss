@@ -266,6 +266,18 @@ a {
 
 main {
     .section-partner {
+        .container {
+            padding: 0 100px;
+
+            @media screen and (max-width: 1441px) {
+                padding: 0 50px;
+            }
+
+            @media screen and (max-width: 509px) {
+                padding: 0 30px;
+            }
+        }
+
         h2 {
             font-size: 36px;
             font-weight: 700;
@@ -280,12 +292,12 @@ main {
             &__partner {
                 img {
                     display: block;
-                    width: 300px;
+                    height: 140px;
                     margin: 0 auto;
                     margin-bottom: 10px;
 
                     @media screen and (max-width: 965px) {
-                        width: 200px;
+                        height: 100px;
                     }
                 }
 

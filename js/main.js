@@ -25,3 +25,30 @@ function mobileMenu() {
    
 }
 
+var swiper = new Swiper(".sliderPartner", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 2,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    breakpoints: {
+        100: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        901: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+      },
+  });
+
