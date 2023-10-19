@@ -232,6 +232,30 @@ a {
   }
 }
 
+main .section-partner h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2D3150;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+main .section-partner .content__partner img {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 965px) {
+  main .section-partner .content__partner img {
+    width: 200px;
+  }
+}
+main .section-partner .content__partner span {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+}
 main .section-features {
   padding-top: 150px;
 }

@@ -150,6 +150,10 @@ $yellow-color: #F7C92C;
         .content {
             margin-top: 80px;
 
+            &__partner img {
+                width: 200px;
+            }
+
             &__title {
                 width: 540px;
                 font-size: 3rem;
@@ -245,6 +249,39 @@ $yellow-color: #F7C92C;
 
 
 main {
+    .section-partner {
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #2D3150;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 40px;
+
+        }
+
+        .content {
+            &__partner {
+                img {
+                    display: block;
+                    width: 300px;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+
+                    @media screen and (max-width: 965px) {
+                        width: 200px;
+                    }
+                }
+
+                span {
+                    display: block;
+                    text-align: center;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
     .section-features {
         padding-top: 150px;
 
