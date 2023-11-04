@@ -10,18 +10,18 @@
       <loc>https://mansapp.netlify.app/students</loc>
       <lastmod>2023-04-11</lastmod>
       <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
+      <priority>0.6</priority>
    </url>
    <url>
       <loc>https://mansapp.netlify.app/about</loc>
       <lastmod>2023-04-11</lastmod>
       <changefreq>monthly</changefreq>
-      <priority>0.6</priority>
+      <priority>0.4</priority>
    </url>
    <url>
       <loc>https://mansapp.netlify.app/contacts</loc>
       <lastmod>2023-04-11</lastmod>
       <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
+      <priority>0.4</priority>
    </url>
 </urlset>
