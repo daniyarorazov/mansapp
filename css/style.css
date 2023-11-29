@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700;6..12,800;6..12,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header {
-  background: url(../img/header-backround.svg) no-repeat left;
+  background: linear-gradient(180deg, #686DF1 0%, #D47AFF 100%);
   height: 100vh;
   min-height: 728px;
   padding: 0 100px;
@@ -131,7 +131,7 @@
 .header-content .content__title {
   width: 540px;
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 800;
   color: #fff;
   margin-bottom: 3rem;
   line-height: 126.9%;
@@ -180,16 +180,17 @@
 }
 .header-content .content__button {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2.4rem;
   border-radius: 0.5rem;
   background: #F7C92C;
   border: none;
   color: #000;
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 700;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  margin-top: 2rem;
 }
 .header-content .content__button:hover {
   background: #000;
@@ -228,7 +229,7 @@ main .section-partner .container {
 }
 main .section-partner h2 {
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 800;
   color: #2D3150;
   text-align: center;
   margin-top: 50px;
@@ -249,6 +250,8 @@ main .section-partner .content__partner span {
   display: block;
   text-align: center;
   font-size: 24px;
+  font-weight: 700;
+  margin-top: 2rem;
 }
 main .section-features {
   padding-top: 150px;
@@ -310,9 +313,172 @@ main .section-features .section__item-img {
   margin-bottom: 20px;
 }
 
-.section-for-company {
-  background-color: #FAFAFF;
+.section-about-us {
   margin-top: 200px;
+}
+.section-about-us .container {
+  display: flex;
+  padding: 0 100px;
+  justify-content: space-between;
+  gap: 60px;
+}
+@media screen and (max-width: 1441px) {
+  .section-about-us .container {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 967px) {
+  .section-about-us .container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 509px) {
+  .section-about-us .container {
+    padding: 0 30px;
+  }
+}
+.section-about-us .section__image img {
+  width: 513px;
+  border-radius: 20px;
+}
+@media (max-width: 1091px) {
+  .section-about-us .section__image img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 967px) {
+  .section-about-us .section__image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 40%;
+  }
+}
+.section-about-us .section__title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #1D393D;
+  margin-bottom: 40px;
+}
+@media (max-width: 1091px) {
+  .section-about-us .section__title {
+    font-size: 30px;
+  }
+}
+.section-about-us .section__text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+@media (max-width: 1091px) {
+  .section-about-us .section__text {
+    font-size: 17px;
+  }
+}
+.section-about-us .section__button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  background: #4B4AEF;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.section-about-us .section__button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.section-how-it-works {
+  margin-top: 200px;
+}
+.section-how-it-works .container {
+  padding: 0 100px;
+}
+@media screen and (max-width: 1441px) {
+  .section-how-it-works .container {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 509px) {
+  .section-how-it-works .container {
+    padding: 0 30px;
+  }
+}
+.section-how-it-works .section__title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #1D393D;
+  margin-bottom: 40px;
+  text-align: center;
+}
+@media (max-width: 443px) {
+  .section-how-it-works .section__title {
+    font-size: 30px;
+  }
+}
+.section-how-it-works .section__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  margin-top: 100px;
+}
+@media screen and (max-width: 1201px) {
+  .section-how-it-works .section__content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    row-gap: 80px;
+  }
+}
+.section-how-it-works .section__step {
+  text-align: center;
+}
+.section-how-it-works .step__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #D3DAFF;
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 60px;
+}
+.section-how-it-works .step__text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.section-for-company {
+  background-color: #DBE1FF;
+  margin-top: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  border-radius: 30px;
+}
+@media screen and (max-width: 1441px) {
+  .section-for-company {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 509px) {
+  .section-for-company {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 .section-for-company .container {
   display: flex;
@@ -334,7 +500,7 @@ main .section-features .section__item-img {
   margin-top: 40px;
 }
 .section-for-company .section__img {
-  width: 75%;
+  width: 100%;
   margin-top: 20px;
 }
 @media screen and (max-width: 1465px) {
@@ -349,17 +515,18 @@ main .section-features .section__item-img {
   }
 }
 .section-for-company .section__title {
-  font-size: 36px;
-  color: #4A4A4A;
+  font-size: 40px;
+  color: #2F4BDF;
   margin-bottom: 50px;
   margin-top: 50px;
+  font-weight: 800;
 }
 .section-for-company .section__title::after {
   content: "";
   display: block;
   position: absolute;
   width: 50px;
-  height: 4px;
+  height: 2px;
   margin-top: 10px;
   background-color: #F7C92C;
 }
@@ -369,9 +536,11 @@ main .section-features .section__item-img {
   }
 }
 .section-for-company .section__text {
-  color: #575757;
+  color: #7085EB;
   font-size: 20px;
   width: 75%;
+  font-weight: 600;
+  line-height: 1.5;
 }
 @media screen and (max-width: 1165px) {
   .section-for-company .section__text {
@@ -386,12 +555,12 @@ main .section-features .section__item-img {
 }
 .section-for-company .section__button {
   display: inline-block;
-  padding: 1rem 3rem;
+  padding: 1rem 4rem;
   border-radius: 0.5rem;
   background: #4B4AEF;
   border: none;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 800;
   text-decoration: none;
   transition: all 0.3s ease-in-out;

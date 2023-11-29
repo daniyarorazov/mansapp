@@ -1,4 +1,4 @@
 User-agent: *
 
-Host: https://mansapp.netlify.app/
+Host: https://mansapp.netlify.app
 Sitemap: https://mansapp.netlify.app/sitemap.xml

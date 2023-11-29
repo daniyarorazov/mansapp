@@ -30,7 +30,7 @@ var swiper = new Swiper(".sliderPartner", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    slidesPerView: 2,
+    slidesPerView: 3,
     loop: true,
     autoplay: {
         delay: 2500,
@@ -49,6 +49,10 @@ var swiper = new Swiper(".sliderPartner", {
             slidesPerView: 2,
             spaceBetween: 40,
         },
+        1124: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+      },
       },
   });
 
