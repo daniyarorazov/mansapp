@@ -197,7 +197,7 @@
   color: #fff;
 }
 .header-content .img img {
-  height: 100%;
+  width: 100%;
   min-width: 636px;
 }
 @media screen and (max-width: 1265px) {
