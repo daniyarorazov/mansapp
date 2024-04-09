@@ -45,8 +45,9 @@ $yellow-color: #F7C92C;
             text-decoration: none;
 
             img {
-                width: 2rem;
+                width: 3rem;
                 margin-right: 0.5rem;
+                border-radius: 50%;
             }
         }
 
@@ -183,15 +184,15 @@ $yellow-color: #F7C92C;
                 color: #606060;
                 margin-bottom: 10px;
                 background-color: #fff;
-                padding-left: 2px;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                border-radius: 4px;
-
+                padding-left: 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 8px;
 
                 @media screen and (max-width: 473px) {
-                    width: 180px;
+                    width: 210px;
                     font-size: 14px;
+                    padding-right: 5px;
                 }
             }
 

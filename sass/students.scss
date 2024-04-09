@@ -49,8 +49,9 @@ a {
             text-decoration: none;
 
             img {
-                width: 2rem;
+                width: 3rem;
                 margin-right: 0.5rem;
+                border-radius: 50%;
             }
         }
 
@@ -193,8 +194,9 @@ a {
                 border-radius: 8px;
 
                 @media screen and (max-width: 473px) {
-                    width: 180px;
+                    width: 200px;
                     font-size: 14px;
+                    padding-right: 5px;
                 }
             }
 

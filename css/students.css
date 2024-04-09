@@ -43,8 +43,9 @@ a {
   text-decoration: none;
 }
 .header-navbar .logo img {
-  width: 2rem;
+  width: 3rem;
   margin-right: 0.5rem;
+  border-radius: 50%;
 }
 .header-navbar .menu {
   display: flex;
@@ -170,8 +171,9 @@ a {
 }
 @media screen and (max-width: 473px) {
   .header-content .content__subtitle {
-    width: 180px;
+    width: 200px;
     font-size: 14px;
+    padding-right: 5px;
   }
 }
 .header-content .content__text {
