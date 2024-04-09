@@ -272,11 +272,13 @@ main {
 
         .content {
             &__partner {
+                margin-bottom: 100px;
+
                 img {
                     display: block;
                     height: 140px;
                     margin: 0 auto;
-                    margin-bottom: 10px;
+                    margin-bottom: 20px;
 
                     @media screen and (max-width: 965px) {
                         height: 100px;

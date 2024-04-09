@@ -15,15 +15,13 @@ $(window).resize(function() {
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".menu");
 const htmlElement = document.documentElement; // Получаем <html> элемент
-
+const html = document.querySelector("html");
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-
-    // Добавляем или убираем класс "overflow-hidden" у <html> в зависимости от состояния меню
-   
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+  html.style.overflow = html.style.overflow === "hidden" ? "" : "hidden";
 }
 
 var swiper = new Swiper(".sliderPartner", {

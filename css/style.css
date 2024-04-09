@@ -235,11 +235,14 @@ main .section-partner h2 {
   margin-top: 50px;
   margin-bottom: 40px;
 }
+main .section-partner .content__partner {
+  margin-bottom: 100px;
+}
 main .section-partner .content__partner img {
   display: block;
   height: 140px;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 965px) {
   main .section-partner .content__partner img {

@@ -14,6 +14,7 @@ $(window).resize(function() {
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".menu");
+const html = document.querySelector("html");
 const htmlElement = document.documentElement; // Получаем <html> элемент
 
 hamburger.addEventListener("click", mobileMenu);
@@ -21,8 +22,7 @@ hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
-
-   
+    html.style.overflow = html.style.overflow === "hidden" ? "" : "hidden";
 }
 
 var swiper = new Swiper(".sliderPartner", {
@@ -30,12 +30,12 @@ var swiper = new Swiper(".sliderPartner", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    slidesPerView: 3,
     loop: true,
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
       },
+    slidesPerView: 2,
     breakpoints: {
         100: {
             slidesPerView: 1,
@@ -46,13 +46,8 @@ var swiper = new Swiper(".sliderPartner", {
           spaceBetween: 20,
         },
         1024: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 40,
         },
-        1124: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-      },
       },
   });
-

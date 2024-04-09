@@ -181,16 +181,16 @@ a {
             }
 
             &__subtitle {
-                width: 220px;
+                width: 270px;
                 font-size: 18px;
                 font-weight: 500;
                 color: #606060;
                 margin-bottom: 10px;
                 background-color: #fff;
-                padding-left: 2px;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                border-radius: 4px;
+                padding-left: 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 8px;
 
                 @media screen and (max-width: 473px) {
                     width: 180px;
@@ -268,6 +268,7 @@ main {
     .section-partner {
         .container {
             padding: 0 100px;
+            margin-bottom: 100px;
 
             @media screen and (max-width: 1441px) {
                 padding: 0 50px;
